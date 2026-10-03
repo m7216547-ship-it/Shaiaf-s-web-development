@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>My hobbies</title>
+        <style>
+            body{
+                background-color: rgb(149, 149, 237);
+            }
+            h1{
+                color: blue;
+                background-color: lightblue;
+                text-align: center;
+            }
+
+            #hobby-card{
+            text-align: center;
+            border: 2px solid rgb(110, 110, 221);
+            border-width: 10px;
+            border-radius: 8px;
+            padding: 20px;
+            background: rgb(91, 91, 196);
+        }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>My hobbies</h1>
+        <p id="hobby">Click this button to know about my hobbies!</p>
+        <button onclick="Showhobbies()">Click this</button>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div id="hobby-card">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script>
+            function Showhobbies() {
+                document.getElementById("hobby-card").innerHTML = "<h3>MY HOBBIES</h3><p>My hobbies are coding and drawing.</p><p>I do coding and I create new programs.</p><p>I draw pictures and express my creativity.</p>";
+    
+            }
+
+
+
+
+        </script>
+    
+    </body>
+
+    
+
+
+</html>
